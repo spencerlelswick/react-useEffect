@@ -1,0 +1,142 @@
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+nav {
+  min-height: 2.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.txt-center {
+  text-align: center;
+}
+.bg-light {
+  background-color: #eee;
+}
+
+.bg-medium {
+  background-color: #bbb;
+}
+
+.bg-dark {
+  background-color: #a9a9a9;
+}
+
+.holy-grail {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.holy-grail__main {
+  /* Take the remaining height */
+  flex-grow: 1;
+
+  /* Layout the left sidebar, main content and right sidebar */
+  display: flex;
+  flex-direction: row;
+}
+
+.holy-grail__left {
+  width: 15%;
+}
+
+.holy-grail__middle {
+  padding: 2rem 0;
+  /* Take the remaining width */
+  flex-grow: 1;
+}
+
+.holy-grail__right {
+  width: 15%;
+}
+
+/* Navigation  */
+.split-navigation {
+  /* Content is centered horizontally */
+  align-items: center;
+  display: flex;
+
+  /* Reset styles */
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0.5rem 0;
+}
+
+.split-navigation__item {
+  margin-right: 0.25rem;
+}
+
+.split-navigation__item--right {
+  /* Sticks to the right */
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Content Layout Styling */
+
+.card-layout {
+  display: flex;
+  justify-content: center;
+  /* Put a card in the next row when previous cards take all width */
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card-layout__item {
+  /* There will be 3 cards per row */
+  flex-basis: 30%;
+}
+
+/* ResultCard Styling  */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+.card__cover {
+  background-color: #eee;
+  height: 20rem;
+  width: 100%;
+}
+
+.card__content {
+  /* Take available height */
+  flex: 1;
+}
+
+/* Search Styling  */
+
+.Search-wrapper {
+  padding: 0.5rem 0.75rem;
+}
+.search-box {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.25rem;
+  /* Box */
+  padding: 0.25rem;
+  border: 1px solid #d1d5db;
+
+  /* Fonts */
+  line-height: 1.5rem;
+}
+
+.search-box__input {
+  border-color: transparent;
+  /* Take available width */
+  flex: 1;
+}

@@ -1,0 +1,15 @@
+Key Terms:
+
+State - the current data provided to a component
+Hook - a function that can isolate some functionality - (such as manage and update state)
+useState - a react hook that will store data in an assigned variable that will persist between renders; 
+  - useState exports an array of values [ a value, a function ]
+  - useState accepts an argument - the default value assigned at initialization
+
+State Variable - assigned when invoking a useState hook: 
+  const [yourVariable, ...] = useState(defaultValue)
+
+Array Destructuring - when you want to access position elements in an array - you can use [] to wrap your variable: const [first, second, third] = ["abc","def","ghi"]
+
+useEffect - when you want to run some code / manage side effects from component renders 
+use-case - I want to fetch some data, but need to update state after the fetch has completed. A use effect can run a 'setter' function after some async data is available. 
